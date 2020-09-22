@@ -179,7 +179,7 @@ footer {
     height: 40px;
     margin: 0;
     padding: 0;
-    margin-left: 30px;
+    
 }
 
 .bottom-f p {
@@ -188,6 +188,7 @@ footer {
     color: rgba(0,0,0,.54);
     margin: 0;
     padding: 0;
+    margin-left: 30px;
 }
 
 .bottom-f-left {
@@ -202,4 +203,20 @@ footer {
     justify-content: flex-end;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.phrase{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.lang {
+    color: blue;
+}
+
+.lang:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
