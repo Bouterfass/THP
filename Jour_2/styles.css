@@ -68,16 +68,18 @@ a p:hover {
 }
 
 input {
+    text-indent: 38px;
     position: fixed;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
+    width: 500px;
     height: 35px;
     top: 319px;
     outline: none;
-    border: none;
+    border: 1px solid rgba(194, 194, 194, 0.644);
+    border-radius: 25px;
     background: none;
     font-size: 16px;
 }
@@ -117,23 +119,21 @@ input {
 }
 
 .search-icon {
-
-    border: 1px solid rgba(194, 194, 194, 0.644);
     width: 550px;
     height: 40px;
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    border-radius: 24px;
+   
 }
 
-.search-icon:hover {
+input:hover {
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
 
 .search-icon i {
-    padding-right: 15px;
+    padding-right: 42px;
 }
 
 .search-icon i:hover {
@@ -141,8 +141,8 @@ input {
 }
 
 .search-icon img {
-    padding-top: 1px;
-    padding-left: 12px;
+    padding-top: 2px;
+    padding-left: 38px;
 }
 
 footer {
