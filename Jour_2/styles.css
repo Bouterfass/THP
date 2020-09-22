@@ -34,6 +34,13 @@ a p {
     padding: 0;
    
 }
+.menu-logo:hover {
+    opacity: 50%;
+}
+
+img[src="google-logo.png"]:hover {
+    cursor: pointer;
+}
 
 a p:hover {
     text-decoration: underline;
@@ -108,8 +115,6 @@ input {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    
-    
 }
 
 .btn-search button:hover {
@@ -128,6 +133,15 @@ input {
    
 }
 
+.search-icon img {
+    padding-top: 2px;
+    padding-left: 38px;
+}
+
+img[src="google mic.png"]:hover{
+    cursor: pointer;
+}
+
 input:hover {
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
@@ -136,14 +150,6 @@ input:hover {
     padding-right: 42px;
 }
 
-.search-icon i:hover {
-    cursor: pointer;
-}
-
-.search-icon img {
-    padding-top: 2px;
-    padding-left: 38px;
-}
 
 footer {
     position: fixed;
