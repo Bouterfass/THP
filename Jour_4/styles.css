@@ -1,0 +1,6 @@
+.bg {
+    background-image: url(surfboy.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 500px;
+}

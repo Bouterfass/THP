@@ -4,7 +4,6 @@ body {
 }
 
 .nav {
-
     display: flex;
     justify-content: flex-end;
 }
@@ -92,7 +91,6 @@ input {
 }
 
 
-
 .content img {
     padding-left: 40px;
 }
@@ -165,13 +163,11 @@ footer {
     display: flex;
     align-items: center;
     height: 40px;
-    margin: 0;
-    padding: 0;
+   
 }
 
 .top-f p {
-    margin: 0;
-    padding: 0;
+    
     color: rgba(0,0,0,.54);
     margin-left: 30px;
     font-size: 18px;
@@ -201,12 +197,12 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    justify-content: flex-end;
+
 }
 
 .bottom-f-right {
     display: flex;
-    justify-content: flex-end;
+   
     flex-direction: row;
     justify-content: flex-end;
 }
