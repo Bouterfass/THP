@@ -1,5 +1,5 @@
 .bg {
-    background-image: url(surfboy.jpg);
+    background: url('surfboy.jpg') no-repeat center center fixed;
     background-size: cover;
     background-size: 100% 100%;
     height: 500px;

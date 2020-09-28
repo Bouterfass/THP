@@ -1,0 +1,9 @@
+.bg {
+   
+    background: url("cat_blur.jpg") no-repeat center fixed;
+    height: 500px;
+    background-size: cover;
+    background-size: 100% 100%;
+
+  }
+  
