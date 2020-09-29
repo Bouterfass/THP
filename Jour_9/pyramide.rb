@@ -6,7 +6,7 @@ puts "Voici la pyramide :"
 
 i = 1
 
-while i <= etage do
+while i <= etage 
     puts " " * (etage - i) + "#" * i
     i += 1
 end
