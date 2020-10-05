@@ -4,7 +4,7 @@ nombre = gets.chomp.to_i
 
 i = 0
 
-while i < nombre do
+while i < nombre
     puts "Salut, ça farte?"
     i +=1
 end

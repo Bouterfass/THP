@@ -4,7 +4,7 @@ print "> "
 naissance = gets.chomp.to_i
 annee = naissance
 
-while annee < 2020 do
+while annee < 2020
     if (2020 - annee) == (annee - naissance)
         puts "Il y a #{2020 - annee}, tu avais la moitié de l'âge que tu as aujourd'hui."
     else
