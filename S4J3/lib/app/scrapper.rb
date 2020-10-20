@@ -31,7 +31,7 @@ class Scrapper
     def save_as_JSON
         save = get_email
         puts save
-        File.open("/home/youcef/Desktop/THP/Jour_24/lib/db/emails.json", "w") do |f|
+        File.open("lib/db/emails.json", "w") do |f|
             f.write(JSON.pretty_generate(save))
             puts "\n"
         end
@@ -39,7 +39,7 @@ class Scrapper
 
     def save_as_csv
         save = get_email
-        CSV.open("/home/youcef/Desktop/THP/Jour_24/lib/db/emails.csv", "w") do |row|
+        CSV.open("lib/db/emails.csv", "w") do |row|
             save.each do |elem|
                 elem.to_a.each{|e| row << e}
             end
