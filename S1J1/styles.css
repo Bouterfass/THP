@@ -1,0 +1,11 @@
+body {
+    margin: auto;
+    line-height: 1.6;
+    font-size: 18px;
+    max-width: 650px;
+    color: #444;
+}
+
+p {
+    display: block;
+}
