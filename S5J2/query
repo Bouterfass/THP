@@ -1,0 +1,41 @@
+Recupere tout les album
+SELECT * FROM albums;
+
+Recupere tout les albums dont les titres contiennent Great
+SELECT * FROM albums WHERE Title like '%Great%';
+
+Donner le nombre total d'albums contenus dans la base (sans regarder les id bien sûr)
+SELECT COUNT(*) FROM albums;
+
+Supprimer tous les albums dont le nom contient "music"
+DELETE FROM albums WHERE Title like '%music%';
+
+Récupérer tous les albums de AC/DC
+SELECT Title FROM albums INNER JOIN artists on albums.artistid = artists.artistid where artists.artistid=1;
+ou
+SELECT Title FROM albums INNER JOIN artists on albums.artistid = artists.artistid where artists.Name='AC/DC';
+
+Récupérer tous les titres des albums de AC/DC
+SELECT t.Name FROM tracks AS t
+INNER JOIN albums AS al ON t.albumid = al.albumid
+INNER JOIN artists as ar ON al.ArtistId = ar.ArtistId
+WHERE al.artistid = 1;
+
+ou 
+
+SELECT t.Name FROM tracks AS t
+INNER JOIN albums AS al ON t.albumid = al.albumid
+INNER JOIN artists as ar ON al.ArtistId = ar.ArtistId
+WHERE ar.name = 'AC/DC';
+
+Récupérer la liste des titres de l'album "Let There Be Rock"
+SELECT t.Name FROM tracks AS t
+INNER JOIN albums AS al ON t.albumid = al.albumid
+WHERE al.title = 'Let There Be Rock';
+
+Afficher le prix de cet album ainsi que sa durée totale
+SELECT SUM(t.unitprice), SUM(t.milliseconds) FROM tracks AS t
+INNER JOIN albums AS al ON t.albumid = al.albumid
+WHERE al.title = 'Let There Be Rock';
+
+Afficher le coût de l'intégralité de la discographie de "Deep Purple"

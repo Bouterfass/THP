@@ -29,31 +29,15 @@ class Gossip
 
 
     def self.find(id)
-        i = 0
-        CSV.read("./db/gossip.csv").each do |csv_line|
-            if i + 1 == id
-                return csv_line
-            end
-            i += 1
-        end
-        return puts "id_not_found"
+       self.all[id - 1]
     end
 
     def self.update(id, auteur, potin)
-        update = []
-        CSV.read("./db/gossip.csv").each_with_index do |line, index|
-            if id.to_i - 2 == index
-                update << [auteur, potin]
-            else
-                update << [line[0], line[1]]
-            end
-        end
-    
-        CSV.open("./db/gossip.csv", "w") do |csv|
-            update.each do |line|
-                csv << line
-            end
-        end
+        update = self.all
+        update[id - 1].auteur = auteur
+        update[id - 1].potin = potin
+        CSV.open('./db/gossip.csv', 'w'){ |line| line = ''}
+        CSV.open('./db/gossip.csv', 'w'){ |line| line = update.each(&:save)}
     end
 end
 
